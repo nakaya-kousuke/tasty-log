@@ -1,0 +1,10 @@
+# macOS関連ファイル
+.DS_Store
+
+# IDEやエディタの設定ファイル
+.vscode/
+
+# ビルド生成物やログファイル
+node_modules/
+*.log
+dist/
