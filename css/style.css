@@ -164,3 +164,54 @@ body {
   background-color: #a98c5f;
   color: #ffffff;
 }
+
+/* footer */
+.footer {
+  background-color: #3c301e;
+  text-align: center;
+  padding-top: 46px;
+  color: #ffffff;
+}
+
+.footer-logo {
+
+}
+
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-nav-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.footer-nav-item {
+  display: block;
+}
+
+.footer-nav-link {
+
+}
+
+.sns-img {
+  width: 56px;
+}
+
+.footer-nav-link-text {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.footer-copy-wrapper {
+  border-top: 1px solid rgba(241, 238, 228, 0.25);
+  padding: 12px;
+  margin-top: 46px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
