@@ -1,5 +1,11 @@
 body {
   font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05em;
+  color: #3c301e;
+}
+
+img {
+  width: 100%;
 }
 
 /* header */
@@ -11,6 +17,11 @@ body {
   width: 100%;
   text-align: center;
   padding: 12px;
+}
+
+.header-logo {
+  width: 200px;
+  margin: 0 auto;
 }
 
 .header-nav {
@@ -51,13 +62,15 @@ body {
   font-size: 12px;
 }
 
+/* ファーストビュー */
+.fv-picture img {
+  width: 100%;
+}
+
 /* aboutセクション */
 .about {
   padding: 40px 0;
   background-color: #f1eee4;
-}
-.about-contents {
-
 }
 
 .about-text-contents {
@@ -79,24 +92,13 @@ body {
   background-color: #f1eee4;
 }
 
-.menu-contents {
-
-}
-
 .menu-item + .menu-item {
   margin-top: 62px;
-}
-
-.menu-img {
-
 }
 
 .menu-text-contents {
   text-align: center;
   padding: 16px 10px;
-}
-
-.menu-name {
 }
 
 .menu-name-main {
@@ -127,10 +129,6 @@ body {
 
 .shop-inner {
   padding: 0 20px;
-}
-
-.shop-contents {
-
 }
 
 .shop-text {
@@ -174,7 +172,8 @@ body {
 }
 
 .footer-logo {
-
+  width: 200px;
+  margin: 0 auto;
 }
 
 .footer-text {
@@ -191,10 +190,6 @@ body {
 
 .footer-nav-item {
   display: block;
-}
-
-.footer-nav-link {
-
 }
 
 .sns-img {
@@ -218,12 +213,28 @@ body {
 
 /* タブレット、PCサイズの表示 */
 @media screen and (min-width: 768px) {
+  body {
+    letter-spacing: 0.05em;
+    color: #3c301e;
+  }
+  .header {
+    padding: 16px;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
   .header-inner {
     max-width: 1080px;
     padding: 0 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+  }
+
+  .header-nav-list{
+    gap: 40px;
   }
 
   .header-nav-link {
@@ -241,7 +252,7 @@ body {
   }
 
   .section-heading-main {
-    font-size: 60px;
+    font-size: 64px;
   }
 
   .about {
@@ -266,6 +277,14 @@ body {
     font-size: 15px;
   }
 
+  .about-text + .about-text {
+    margin-top: 30px;;
+  }
+
+  .menu {
+    padding: 0 0 100px;
+  }
+
   .menu-list {
     display: flex;
     gap: 20px;
@@ -279,11 +298,11 @@ body {
     background-image: url(../img/bg-shop.png);
     background-position: center center;
     background-size: cover;
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .shop-inner {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -308,5 +327,9 @@ body {
 
   .footer-text {
     margin-top: 12px;
+  }
+
+  .footer-copyright {
+    font-size: 13px;
   }
 }
