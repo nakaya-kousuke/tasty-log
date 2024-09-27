@@ -215,3 +215,98 @@ body {
 .footer-copyright {
   font-size: 12px;
 }
+
+/* タブレット、PCサイズの表示 */
+@media screen and (min-width: 768px) {
+  .header-inner {
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav-link {
+    transition: opacity 0.3s;
+  }
+
+  .header-nav-link:hover {
+    opacity: 0.7;
+  }
+
+  .inner {
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .section-heading-main {
+    font-size: 60px;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .about-contents {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-text-contents {
+    margin-top: 0;
+  }
+
+  .about-img {
+    width: 300px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-item + .menu-item {
+    margin-top: 0;
+  }
+
+  .shop {
+    background-image: url(../img/bg-shop.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 0;
+  }
+
+  .shop-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .form {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-submit {
+    margin-top: 0;
+    transition: opacity 0.3s;
+  }
+
+  .form-submit:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .footer-nav-list {
+    gap: 40px;
+  }
+
+  .footer-text {
+    margin-top: 12px;
+  }
+}
